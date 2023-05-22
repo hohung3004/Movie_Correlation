@@ -74,16 +74,11 @@ Xóa các hàng khi cột name bị để trống
 ```py
 df.dropna(subset=['name'], inplace=True)
 ```
-Kết quả kiểm tra dữ liệu còn thiếu sau khi đã được xử lý
-![4](https://drive.google.com/uc?id=1IoGhZGK465Axio3ZBVQHXE_xw3QDMiOV)
 
 Kiểm tra kiểu dữ liệu cho các cột
 ```py
 df.dtypes
 ```
-
-![5](https://drive.google.com/uc?id=1llbkoS57e6wJhYY3NZjQLjqDCegRV8rb)
-
 Thay đổi loại dữ liệu của cột budget và gross
 ```py
 df['budget'] = df['budget'].astype('int64')
