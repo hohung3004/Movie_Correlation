@@ -296,7 +296,7 @@ plt.xlabel('Ngân Sách Thực Hiện')
 plt.ylabel('Doanh Thu')
 plt.show()
 ```
-![](c:/Users/Win10x64/Downloads/H%E1%BB%93%20V%C4%83n%20H%C3%B9ng%20-%20KHOA%20C%C3%94NG%20NGH%E1%BB%86%20TH%C3%94NG%20TIN%20(1).jpg)
+
 ![20](https://drive.google.com/uc?id=1N_5HkuRNenU79iT6PQQhpUFK85AVoW0K)
 
 > - Hiểu rõ hơn về mối quan hệ giữa ngân sách và doanh thu: Mô hình hồi quy tuyến tính giúp doanh nghiệp hiểu rõ hơn về mối quan hệ giữa ngân sách và doanh thu. Từ đó, họ có thể đưa ra các quyết định tối ưu hóa chi phí và tăng doanh thu.
