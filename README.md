@@ -1,8 +1,8 @@
-# Ề TÀI : Phân tích bộ dữ liệu về các bộ phim khác nhau của ngành công nghiệp điện ảnh.
-
+# ĐỀ TÀI : Phân tích bộ dữ liệu về các bộ phim khác nhau của ngành công nghiệp điện ảnh.
 
 ## Giới thiệu
  Dự án phân tích bộ dữ liệu về các bộ phim khác nhau của ngành công nghiệp điện ảnh là một dự án nhằm mục đích khám phá và tìm hiểu mô hình số liệu về các bộ phim từ các điểm như ngân sách, doanh thu, thể loại… Bộ dữ liệu được sử dụng trong dự án này được thu thập từ nhiều nguồn trên internet và điều chỉnh lại để đảm bảo tính đúng đắn và đầy đủ.
+
  Lý do cần thiết xây dựng dự án này là để tìm hiểu sâu hơn về ngành công nghiệp điện ảnh và các yếu tố ảnh hưởng tới thành công của một bộ phim. Dự án cũng có thể giúp cho các nhà sản xuất phim đưa ra những quyết định tốt hơn và phù hợp hơn trong quá trình sản xuất, đồng thời cũng cung cấp thông tin đến người dùng để giúp họ hiểu rõ hơn về các bộ phim mà họ yêu thích.
 ## Tổng quan
  Bộ dữ liệu phim là tập hợp dữ liệu về nhiều phim khác nhau, bao gồm các chi tiết như tiêu đề, thể loại, ngày phát hành, xếp hạng, v.v. Bộ dữ liệu này có thể được sử dụng cho nhiều mục đích phân tích dữ liệu và máy học khác nhau liên quan đến ngành công nghiệp điện ảnh.
@@ -27,7 +27,6 @@
  - Đào tạo các mô hình máy học liên quan đến dữ liệu phim. 
 
 ## ĐI VÀO PHÂN TÍCH
-
 ### I. Giới thiệu bộ dữ liệu
 
 ![1](https://drive.google.com/uc?id=1nXx8Aq75eleyjCcDFjBT4gT9np9psSZz)
@@ -38,7 +37,6 @@ Kiểm tra các cột xem có cột nào có giá trị NAN không?
 ```py
 df.isnull().sum()
 ```
-
 ![2](https://drive.google.com/uc?id=1rbrOoqWSrx3V6HA0WP60RKbPlrsmWqHP)
 
 > => Có khá nhiều dữ liệu còn thiếu
@@ -49,8 +47,8 @@ for i in df.columns:
     pct_missing = np.mean(df[i].isnull())
     print('{} - {}%'.format(i, pct_missing))
 ```
-![3](https://drive.google.com/uc?id=1dkqa_0T3ercZRydaR7USGovTc39SA-Jx)
 
+![3](https://drive.google.com/uc?id=1dkqa_0T3ercZRydaR7USGovTc39SA-Jx)
 > => Số lượng dữ liệu có giá trị NaN không đáng kể với tổng giá trị các cột.
 
 ```py
@@ -77,13 +75,13 @@ Xóa các hàng khi cột name bị để trống
 df.dropna(subset=['name'], inplace=True)
 ```
 Kết quả kiểm tra dữ liệu còn thiếu sau khi đã được xử lý
-
 ![4](https://drive.google.com/uc?id=1IoGhZGK465Axio3ZBVQHXE_xw3QDMiOV)
 
 Kiểm tra kiểu dữ liệu cho các cột
 ```py
 df.dtypes
 ```
+
 ![5](https://drive.google.com/uc?id=1llbkoS57e6wJhYY3NZjQLjqDCegRV8rb)
 
 Thay đổi loại dữ liệu của cột budget và gross
@@ -104,6 +102,7 @@ Hiện thị thông tin Top 10 bộ phim doanh thu  cao nhất
 df_top10_gross = df.sort_values(by = ['gross'], inplace = False, ascending = False)
 df_top10_gross.head(10)
 ```
+
 ![7](https://drive.google.com/uc?id=1YLBQ8rpayZMTO3VMiAIeN9suRQDpl_25)
 
 Hiện thị thông tin Top 10 bộ phim doanh thu  thấp nhất
@@ -118,6 +117,7 @@ Hiện thị thông tin Top 10 bộ phim có ngân sách thực hiện thấp nh
 df_top10_budget_short = df.sort_values(by = ['budget'], inplace = False, ascending = True)
 df_top10_budget_short.head(10)
 ```
+
 ![9](https://drive.google.com/uc?id=1n4gCuuhKO3mBj2tiKtJvVaJwKLOpSDZq)
 
 Hiện thị thông tin Top 10 bộ phim có ngân sách thực hiện cao nhất.
@@ -132,6 +132,7 @@ Hiện thị thông tin Top 10 bộ phim có lượt vote nhiều nhất .
 df_top10_vote = df.sort_values(by = ['votes'], inplace = False, ascending = False)
 df_top10_vote.head(10)
 ```
+
 ![11](https://drive.google.com/uc?id=1e_L7rgAuz0aVVCKzyd60HgDBSixaxMYK)
 
 Lấy 5 loại phim có tỷ trọng lợi nhuận cao nhất năm 2020
@@ -163,6 +164,7 @@ plt.xlabel('Số Lượng phim')
 plt.ylabel('Tên đạo diễn')
 plt.show()
 ```
+
 ![13](https://drive.google.com/uc?id=1NLQjTN5sOVr3IDZ44_4EYyc1B-w8Goc6)
 
 > - Biểu đồ cho ta biết 10 đạo diễn có nhiều sản phẩm nhất trong tập dữ liệu để giúp chúng ta có  thể giúp chúng ta có được cái nhìn toàn cảnh về sự phổ biến của các đạo diễn trong ngành công nghiệp phim. Biểu đồ này có thể giúp chúng ta xác định các đạo diễn có nhiều ảnh hưởng nhất và từ đó có thể đưa ra quyết định trong các kế hoạch sản xuất phim. 
@@ -214,7 +216,6 @@ plt.ylabel('Doanh thu trung bình')
 plt.title('Doanh thu trung bình của các bộ phim theo thể loại')
 plt.show()
 ```
-
 ![16](https://drive.google.com/uc?id=1FjkrUkk3VzUvxMW7jCItXHPz_QK8gKzG)
 
 > - Biểu đồ này giúp các doanh nghiệp phân tích và đánh giá doanh thu trung bình của từng thể loại phim, từ đó họ có thể đưa ra các chiến lược kinh doanh phù hợp với từng đối tượng thị trường, tối ưu hóa doanh thu.
@@ -233,7 +234,7 @@ plt.xlabel('Xếp Hạng')
 plt.ylabel('Doanh Thu')
 plt.show
 ```
-   ![17](https://drive.google.com/uc?id=1r3IBZkpqYXnvwBYjOVNQonCowyccncBx)
+ ![17](https://drive.google.com/uc?id=1r3IBZkpqYXnvwBYjOVNQonCowyccncBx)
 
 > - Biểu đồ giúp chúng ta có cái nhìn toàn cảnh về sự phổ biến và ảnh hưởng của các loại xếp hạng trong ngành sản xuất phim. Biểu đồ có thể giúp chúng ta tìm ra các xếp hạng phổ biến nhất và từ đó đưa ra các quyết định kinh doanh để tăng doanh thu.
 > - Thông qua biểu đồ này, chúng ta cũng có thể phân tích và so sánh hiệu quả của các xếp hạng khác nhau. Chúng ta có thể tìm ra những xếp hạng nào mang lại doanh thu cao nhất và từ đó đưa ra một số kế hoạch, chiến lược nhằm tăng thêm doanh thu cho các chủ đề xếp hạng này.
@@ -247,6 +248,7 @@ plt.xlabel("Năm")
 plt.ylabel("Lợi nhuận")
 plt.show()
 ```
+
 ![18](https://drive.google.com/uc?id=1iearChatYQOPwMvNrtHI6wpyGhR5QEnj)
 
 > - Biểu đồ này sẽ cho thấy sự thay đổi của lợi nhuận phim qua nhiều năm và giúp người dùng dễ dàng nhận thấy xu hướng phát triển hoặc giảm sút của doanh thu qua thời gian.
@@ -294,6 +296,7 @@ plt.xlabel('Ngân Sách Thực Hiện')
 plt.ylabel('Doanh Thu')
 plt.show()
 ```
+
 ![20](https://drive.google.com/uc?id=1N_5HkuRNenU79iT6PQQhpUFK85AVoW0K)
 
 > - Hiểu rõ hơn về mối quan hệ giữa ngân sách và doanh thu: Mô hình hồi quy tuyến tính giúp doanh nghiệp hiểu rõ hơn về mối quan hệ giữa ngân sách và doanh thu. Từ đó, họ có thể đưa ra các quyết định tối ưu hóa chi phí và tăng doanh thu.
