@@ -90,68 +90,6 @@ df['budget'] = df['budget'].astype('int64')
 df['gross'] = df['gross'].astype('int64')
 ```
 #### B. Trực quan hóa dữ liệu
-Hiện thị thông tin Top 10 bộ phim có điểm bình chọn trung bình cao nhất
-```py
-df_top10_vote_average = df.sort_values(by = ['score'], inplace = False, ascending = False)
-df_top10_vote_average.head(10)
-```
-![6](https://drive.google.com/uc?id=1vFn1nQf2qbHxSayY9Ufzey6ZkBsV2NxJ)
-
-Hiện thị thông tin Top 10 bộ phim doanh thu  cao nhất
-```py
-df_top10_gross = df.sort_values(by = ['gross'], inplace = False, ascending = False)
-df_top10_gross.head(10)
-```
-
-![7](https://drive.google.com/uc?id=1YLBQ8rpayZMTO3VMiAIeN9suRQDpl_25)
-
-Hiện thị thông tin Top 10 bộ phim doanh thu  thấp nhất
-```py
-df_top10_gross_short = df.sort_values(by = ['gross'], inplace = False, ascending = True)
-df_top10_gross_short.head(10)
-```
-![8](https://drive.google.com/uc?id=1DN_kfTx7Li4vNSoIODSGzuyGBm6APQsT)
-
-Hiện thị thông tin Top 10 bộ phim có ngân sách thực hiện thấp nhất
-```py
-df_top10_budget_short = df.sort_values(by = ['budget'], inplace = False, ascending = True)
-df_top10_budget_short.head(10)
-```
-
-![9](https://drive.google.com/uc?id=1n4gCuuhKO3mBj2tiKtJvVaJwKLOpSDZq)
-
-Hiện thị thông tin Top 10 bộ phim có ngân sách thực hiện cao nhất.
-```py
-df_top10_budget = df.sort_values(by = ['budget'], inplace = False, ascending = False)
-df_top10_budget.head(10)
-```
-![10](https://drive.google.com/uc?id=14Y6VOBvoexoeyeAgfj4L-Dj45BWu-AL3)
-
-Hiện thị thông tin Top 10 bộ phim có lượt vote nhiều nhất .
-```py
-df_top10_vote = df.sort_values(by = ['votes'], inplace = False, ascending = False)
-df_top10_vote.head(10)
-```
-
-![11](https://drive.google.com/uc?id=1e_L7rgAuz0aVVCKzyd60HgDBSixaxMYK)
-
-Lấy 5 loại phim có tỷ trọng lợi nhuận cao nhất năm 2020
-```py
-# Tính tỷ trọng doanh thu cho các loại phim trong năm 2020
-summary_df = df[df['year'] == 2020].groupby('genre').agg({
-    'gross': 'sum',
-    'budget': 'sum'
-}).reset_index()
-summary_df['budget_rate'] = summary_df['budget'] / summary_df['gross'] * 100
-# Lấy 5 loại phim có tỷ trọng lợi nhuận cao nhất năm 2020
-top_10 = summary_df.sort_values(by='budget_rate', ascending=False).head(5)
-
-# # Xuất danh sách 5 loại phim
-print("Danh sách 5 loại phim mang về tỷ trọng lợi nhuận cao nhất  năm 2020:")
-print(top_10['genre'])
-```
-![12](https://drive.google.com/uc?id=1nHvtPAKyFmHNEFlYLCKobgaonPxpAZLH)
-
 10 đạo diễn hàng đầu với nhiều bộ phim phát hành  nhất
 ```py
 director_counts = df['director'].value_counts().sort_values(ascending=False)
