@@ -128,7 +128,9 @@ plt.ylabel('Kinh phí trung bình')
 plt.title('Kinh phí trung bình của các bộ phim theo thể loại')
 plt.show()
 ```
+
 ![15](https://drive.google.com/uc?id=1ZIv4tZ1FIpjukGSl8QHMfa6gu5ROvx6K)
+
 
 > - Đánh giá lợi ích của đầu tư: Biểu đồ này giúp các nhà sản xuất phim hiểu rõ hơn về chi phí trung bình đã đầu tư cho các bộ phim của từng thể loại, từ đó đưa ra quyết định về các ngân sách đầu tư phù hợp, giúp tối ưu hóa lợi nhuận.
 > - Quản lý chi phí hiệu quả: Biểu đồ cung cấp cái nhìn tổng thể về chi phí đầu tư cho các bộ phim cùng thể loại giúp đa dạng hóa các kế hoạch đầu tư cho từng thể loại.
@@ -172,7 +174,9 @@ plt.xlabel('Xếp Hạng')
 plt.ylabel('Doanh Thu')
 plt.show
 ```
+
  ![17](https://drive.google.com/uc?id=1r3IBZkpqYXnvwBYjOVNQonCowyccncBx)
+
 
 > - Biểu đồ giúp chúng ta có cái nhìn toàn cảnh về sự phổ biến và ảnh hưởng của các loại xếp hạng trong ngành sản xuất phim. Biểu đồ có thể giúp chúng ta tìm ra các xếp hạng phổ biến nhất và từ đó đưa ra các quyết định kinh doanh để tăng doanh thu.
 > - Thông qua biểu đồ này, chúng ta cũng có thể phân tích và so sánh hiệu quả của các xếp hạng khác nhau. Chúng ta có thể tìm ra những xếp hạng nào mang lại doanh thu cao nhất và từ đó đưa ra một số kế hoạch, chiến lược nhằm tăng thêm doanh thu cho các chủ đề xếp hạng này.
