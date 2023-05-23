@@ -151,6 +151,7 @@ plt.ylabel('Doanh thu trung bình')
 plt.title('Doanh thu trung bình của các bộ phim theo thể loại')
 plt.show()
 ```
+
 ![16](https://drive.google.com/uc?id=1FjkrUkk3VzUvxMW7jCItXHPz_QK8gKzG)
 
 > - Biểu đồ này giúp các doanh nghiệp phân tích và đánh giá doanh thu trung bình của từng thể loại phim, từ đó họ có thể đưa ra các chiến lược kinh doanh phù hợp với từng đối tượng thị trường, tối ưu hóa doanh thu.
@@ -172,7 +173,6 @@ plt.show
 
  ![17](https://drive.google.com/uc?id=1r3IBZkpqYXnvwBYjOVNQonCowyccncBx)
 
-
 > - Biểu đồ giúp chúng ta có cái nhìn toàn cảnh về sự phổ biến và ảnh hưởng của các loại xếp hạng trong ngành sản xuất phim. Biểu đồ có thể giúp chúng ta tìm ra các xếp hạng phổ biến nhất và từ đó đưa ra các quyết định kinh doanh để tăng doanh thu.
 > - Thông qua biểu đồ này, chúng ta cũng có thể phân tích và so sánh hiệu quả của các xếp hạng khác nhau. Chúng ta có thể tìm ra những xếp hạng nào mang lại doanh thu cao nhất và từ đó đưa ra một số kế hoạch, chiến lược nhằm tăng thêm doanh thu cho các chủ đề xếp hạng này.
 
@@ -187,7 +187,7 @@ plt.show()
 ```
 
 ![18](https://drive.google.com/uc?id=1iearChatYQOPwMvNrtHI6wpyGhR5QEnj)
-
+ 
 > - Biểu đồ này sẽ cho thấy sự thay đổi của lợi nhuận phim qua nhiều năm và giúp người dùng dễ dàng nhận thấy xu hướng phát triển hoặc giảm sút của doanh thu qua thời gian.
 > - Ý nghĩa của biểu đồ này là giúp các nhà sản xuất phim và các doanh nghiệp liên quan có cái nhìn tổng quan hơn về sự phát triển của ngành công nghiệp, giúp xác định xu hướng phát triển, cung cầu của thị trường, giúp các ngành doanh nghiệp có quyết định kinh doanh chính xác hơn.
 
@@ -215,6 +215,7 @@ plt.title('Biểu đồ phân tán kinh phí và doanh thu của các loại  ph
 plt.legend(loc='upper right', ncol = 1,bbox_to_anchor =(1.13, 1.15))
 plt.show()
 ```
+
 ![19](https://drive.google.com/uc?id=1POdNnhHglFwPLD-gtbs4O_lgVnKwyRIU)
 
 > - Đánh giá mối quan hệ giữa kinh phí và doanh thu: Biểu đồ giúp các doanh nghiệp trong ngành công nghiệp sản xuất phim đánh giá mối quan hệ giữa kinh phí và doanh thu của các loại phim. Từ đó đưa ra quyết định tối ưu hóa chi phí sản xuất và cải thiện doanh thu.
@@ -235,7 +236,7 @@ plt.show()
 ```
 
 ![20](https://drive.google.com/uc?id=1N_5HkuRNenU79iT6PQQhpUFK85AVoW0K)
-
+ 
 > - Hiểu rõ hơn về mối quan hệ giữa ngân sách và doanh thu: Mô hình hồi quy tuyến tính giúp doanh nghiệp hiểu rõ hơn về mối quan hệ giữa ngân sách và doanh thu. Từ đó, họ có thể đưa ra các quyết định tối ưu hóa chi phí và tăng doanh thu.
 > - Dự báo doanh thu: Mô hình hồi quy tuyến tính giúp dự báo doanh thu và đưa ra các kế hoạch kinh doanh phù hợp với mục tiêu tăng trưởng doanh thu.
 > - Đánh giá hiệu quả kinh doanh: Mô hình hồi quy tuyến tính cho thấy hiệu quả kinh doanh và lợi nhuận của các bộ phim trong từng loại. 
@@ -250,6 +251,7 @@ plt.xlabel('Các Cột Trong Data')
 plt.ylabel('Các Cột Trong Data')
 plt.show()
 ```
+
 ![21](https://drive.google.com/uc?id=1z7ti6QDTBAGpl30FkOViT759X5jC6Tkt)
 
 >- Ma trận tương quan giúp phân tích mối quan hệ giữa các cột dữ liệu số, từ đó giúp cho việc xây dựng mô hình dự đoán chính xác hơn. Trong trường hợp này, doanh thu, kinh phí và thời gian phim có thể có mối tương quan với điểm đánh giá . Việc phân tích mối quan hệ giữa các cột giúp cho việc xác định mối quan hệ giữa các yếu tố ảnh hưởng đến sự thành công của mô hình đưa ra.
