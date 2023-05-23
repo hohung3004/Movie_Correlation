@@ -173,6 +173,7 @@ plt.show
 
  ![17](https://drive.google.com/uc?id=1r3IBZkpqYXnvwBYjOVNQonCowyccncBx)
 
+
 > - Biểu đồ giúp chúng ta có cái nhìn toàn cảnh về sự phổ biến và ảnh hưởng của các loại xếp hạng trong ngành sản xuất phim. Biểu đồ có thể giúp chúng ta tìm ra các xếp hạng phổ biến nhất và từ đó đưa ra các quyết định kinh doanh để tăng doanh thu.
 > - Thông qua biểu đồ này, chúng ta cũng có thể phân tích và so sánh hiệu quả của các xếp hạng khác nhau. Chúng ta có thể tìm ra những xếp hạng nào mang lại doanh thu cao nhất và từ đó đưa ra một số kế hoạch, chiến lược nhằm tăng thêm doanh thu cho các chủ đề xếp hạng này.
 
@@ -218,6 +219,8 @@ plt.show()
 
 ![19](https://drive.google.com/uc?id=1POdNnhHglFwPLD-gtbs4O_lgVnKwyRIU)
 
+
+
 > - Đánh giá mối quan hệ giữa kinh phí và doanh thu: Biểu đồ giúp các doanh nghiệp trong ngành công nghiệp sản xuất phim đánh giá mối quan hệ giữa kinh phí và doanh thu của các loại phim. Từ đó đưa ra quyết định tối ưu hóa chi phí sản xuất và cải thiện doanh thu.
 > - Dự báo doanh thu: Biểu đồ giúp dự báo doanh thu của các bộ phim trong tương lai, đưa ra kế hoạch kinh doanh và ngân sách phù hợp với nhu cầu sản xuất phim.
 > - Đánh giá hiệu quả kinh doanh: Biểu đồ cho thấy hiệu quả kinh doanh và lợi nhuận của các bộ phim trong từng loại. Từ đó, các doanh nghiệp có thể đưa ra các chiến lược sản xuất và quảng bá phim phù hợp với tình hình kinh doanh của mình.
@@ -253,6 +256,8 @@ plt.show()
 ```
 
 ![21](https://drive.google.com/uc?id=1z7ti6QDTBAGpl30FkOViT759X5jC6Tkt)
+
+
 
 >- Ma trận tương quan giúp phân tích mối quan hệ giữa các cột dữ liệu số, từ đó giúp cho việc xây dựng mô hình dự đoán chính xác hơn. Trong trường hợp này, doanh thu, kinh phí và thời gian phim có thể có mối tương quan với điểm đánh giá . Việc phân tích mối quan hệ giữa các cột giúp cho việc xác định mối quan hệ giữa các yếu tố ảnh hưởng đến sự thành công của mô hình đưa ra.
 > - Ma trận tương quan cung cấp thông tin về tương quan giữa các cột dữ liệu số,giúp điều chỉnh số chiều dữ liệu và tối ưu hóa mô hình. 
