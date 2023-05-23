@@ -153,8 +153,8 @@ plt.show()
 ```
 
 ![16](https://drive.google.com/uc?id=1FjkrUkk3VzUvxMW7jCItXHPz_QK8gKzG)
-  
-  
+
+
 > - Biểu đồ này giúp các doanh nghiệp phân tích và đánh giá doanh thu trung bình của từng thể loại phim, từ đó họ có thể đưa ra các chiến lược kinh doanh phù hợp với từng đối tượng thị trường, tối ưu hóa doanh thu.
 > - Phát triển kế hoạch tài chính: Biểu đồ cung cấp cái nhìn tổng quan về doanh thu trung bình của các bộ phim trong từng thể loại, giúp các nhà sản xuất phim và các doanh nghiệp đưa ra kế hoạch tài chính phù hợp, từ đó đảm bảo ngân sách hợp lý cho sản xuất phim.
 > - Tổng kết kết quả công việc: Biểu đồ cho thấy kết quả kinh doanh trung bình của các bộ phim trong từng thể loại trong một khoảng thời gian, giúp nhà sản xuất phim đánh giá hiệu quả của công việc và đưa ra các chiến lược hoặc cải tiến để tăng doanh thu và lợi nhuận.
@@ -218,9 +218,7 @@ plt.legend(loc='upper right', ncol = 1,bbox_to_anchor =(1.13, 1.15))
 plt.show()
 ```
 
-
-![19](https://drive.google.com/uc?id=1POdNnhHglFwPLD-gtbs4O_lgVnKwyRIU)
-
+ ![19](https://drive.google.com/uc?id=1POdNnhHglFwPLD-gtbs4O_lgVnKwyRIU)
 
 
 > - Đánh giá mối quan hệ giữa kinh phí và doanh thu: Biểu đồ giúp các doanh nghiệp trong ngành công nghiệp sản xuất phim đánh giá mối quan hệ giữa kinh phí và doanh thu của các loại phim. Từ đó đưa ra quyết định tối ưu hóa chi phí sản xuất và cải thiện doanh thu.
